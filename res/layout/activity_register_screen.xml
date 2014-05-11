@@ -1,0 +1,160 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterScreen" >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:textColor="#60AFFE"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblFname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTitle"
+        android:layout_marginLeft="20dip"
+        android:text="First Name :"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblFname"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10"
+        android:inputType="textPersonName" >
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblLname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFname"
+        android:layout_marginLeft="20dip"
+        android:text="Last Name :"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtLname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblLname"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/lblUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLname"
+        android:layout_marginLeft="20dip"
+        android:text="Username :"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblUserName"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10"
+        android:inputType="textPersonName" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginLeft="20dip"
+        android:text="Password :"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPassword"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10"
+        android:inputType="textPassword" />
+       
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rbMale"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:layout_span="2"
+        android:clickable="true"
+        android:text="Next"
+        android:textColor="#60AFFE" />
+
+    <TextView
+        android:id="@+id/lblGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtPassword"
+        android:layout_below="@+id/txtPassword"
+        android:layout_marginTop="14dp"
+        android:text="Gender :"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+       </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rbMale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblGender"
+        android:layout_alignBottom="@+id/lblGender"
+        android:layout_toRightOf="@+id/lblGender"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/rbFemale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/txtPassword"
+        android:layout_alignTop="@+id/lblGender"
+        android:text="Female" />
+
+</RelativeLayout>

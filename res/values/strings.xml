@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationAnalytics</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_register_screen">RegisterScreen</string>
+    <string name="title_activity_preference_screen">PreferenceScreen</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <string name="title_activity_sign_up_screen">SignUpScreen</string>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="title_activity_go_to_deal_from_notification">GoToDealFromNotification</string>
+    <string name="title_activity_go_to_deal_from_noification">GoToDealFromNoification</string>
+    <string name="title_activity_go_to_deal">GoToDeal</string>
+    <string name="app_id">248970831974575</string>
+    <string name="title_activity_deal_screen">DealScreen</string>
+
+</resources>

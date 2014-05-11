@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lblLocationInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <!--  <ImageView
+        android:id="@+id/imageView1"
+        android:src="@drawable/mapviewimg"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+         />
+ -->
+     <com.google.android.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapview"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="50dp"
+        android:apiKey="AIzaSyDAx9lY3EKivqabA4qosy8QFflPwSjGUcI"
+        android:clickable="true"
+        android:enabled="true" />
+
+    <!--
+        <com.google.android.maps.MapView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/mapview"
+      android:layout_width="1000dp"
+      android:layout_height="400dp"
+      android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="50dp"
+            
+      
+      android:clickable="true"
+      android:enabled="true"
+      android:apiKey="AIzaSyDAx9lY3EKivqabA4qosy8QFflPwSjGUcI"/>
+    -->
+
+</LinearLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+  
+  <TextView android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lblLocationInfo"
+    android:text="Location"/>
+  
+  <TextView
+      android:id="@+id/lblLocationInfo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_span="2"
+      android:text="Location Information"
+      android:textColor="#60AFFE"
+      android:textSize="30sp"
+      android:textStyle="bold" />
+  
+   <TextView
+      android:id="@+id/lblLocationInfo1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="left"
+      android:text="Latitude: 37.345624 \n\nLongitude: -121.45453232 \n\nAddress: 4261 Norwalk Drive, San Jose, CA - 95129"
+      android:textSize="20sp"
+      />
+
+
+   <ImageView
+       android:id="@+id/imageView1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:src="@android:drawable/ic_dialog_map" />
+    
+</LinearLayout>
+-->

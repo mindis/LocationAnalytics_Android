@@ -1,0 +1,205 @@
+<!--
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomeScreen" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
+-->
+
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/Luname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+      
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <EditText
+        android:id="@+id/Ledituname"
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+
+        <requestFocus />
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/Lpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <EditText
+        android:id="@+id/Leditpw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Login" />
+    
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+        
+</LinearLayout>
+-->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+     android:id="@+id/main_ui_container">
+
+    <TableRow
+        android:gravity="center"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="2"
+            android:text="Login"
+            android:textColor="#60AFFE"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Username :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" >
+        </TextView>
+    </TableRow>
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10" 
+        android:inputType="textPersonName">
+
+<!--         <requestFocus />
+ -->    </EditText>
+
+    <TableRow android:layout_marginTop="20dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:text="Password :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" >
+        </TextView>
+    </TableRow>
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <TableRow
+        android:layout_marginTop="20dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:clickable="true"
+            android:text="Go"
+            android:textColor="#60AFFE" >
+        </Button>
+        
+        
+        
+    </TableRow>
+    <TableRow
+         android:layout_marginTop="20dip"
+        android:gravity="center" >
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:clickable="true"
+            android:text="Register"
+            android:textColor="#60AFFE"></Button>
+    </TableRow>
+    
+    
+     <TableRow
+        android:layout_marginTop="20dip"
+        android:gravity="center" >
+        
+<!--  <Button android:id="@+id/btn_fblogin"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_marginTop="30dip"
+        		android:layout_gravity="center_horizontal"/>
+ -->        </TableRow>
+   
+</TableLayout>
+
+
